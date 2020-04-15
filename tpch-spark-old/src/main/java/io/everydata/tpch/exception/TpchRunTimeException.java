@@ -1,4 +1,4 @@
-package io.everydata.tpch.v2.exception;
+package io.everydata.tpch.exception;
 
 public class TpchRunTimeException
         extends RuntimeException
