@@ -10,10 +10,10 @@
     </parent>
 
     <groupId>io.everydata</groupId>
-    <artifactId>tpch-spark-old</artifactId>
+    <artifactId>tpcds-spark-old</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>tpch-spark-old</name>
+    <name>tpcds-spark-old</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
@@ -46,9 +46,9 @@
         </dependency>
 
         <dependency>
-            <groupId>io.prestosql.tpch</groupId>
-            <artifactId>tpch</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <groupId>io.prestosql.tpcds</groupId>
+            <artifactId>tpcds</artifactId>
+            <version>1.4-SNAPSHOT</version>
         </dependency>
 
         <dependency>
