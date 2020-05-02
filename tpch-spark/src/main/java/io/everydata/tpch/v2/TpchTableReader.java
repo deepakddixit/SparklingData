@@ -1,6 +1,7 @@
 package io.everydata.tpch.v2;
 
 import io.everydata.tpch.Utils;
+import io.everydata.tpch.exception.TpchRunTimeException;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.sources.v2.reader.DataReaderFactory;
 import org.apache.spark.sql.sources.v2.reader.DataSourceReader;
@@ -27,7 +28,7 @@ public class TpchTableReader
           msg =
           String
               .format("No table name configured. Specify property [%s]", TpchProperties.TABLE_NAME);
-      throw new io.everydata.tpch.exception.TpchRunTimeException(msg);
+      throw new TpchRunTimeException(msg);
     }
 
     if (!allOptions.containsKey(TpchProperties.SCALE_FACTOR)) {
@@ -37,7 +38,7 @@ public class TpchTableReader
           String
               .format("No scale factor configured. Specify property [%s]",
                   TpchProperties.SCALE_FACTOR);
-      throw new io.everydata.tpch.exception.TpchRunTimeException(msg);
+      throw new TpchRunTimeException(msg);
     }
     this.tableName = TpchConfigHelper.getTableName(allOptions);
 

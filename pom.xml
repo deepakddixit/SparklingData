@@ -27,6 +27,7 @@
         <module>tpc-spark</module>
         <module>tpch-spark</module>
         <module>tpch-spark-old</module>
+        <module>tpcds-spark-old</module>
     </modules>
 
     <dependencies>
